@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ming Lu 路铭 — How to See, How to Be Seen</title>
+  <meta name="description" content="Ming Lu (路铭) — London-based transdisciplinary artist working across moving image, performance photography and digital embodiment.">
+  <meta name="theme-color" content="#0d0d0c">
+  <meta property="og:title" content="Ming Lu 路铭">
+  <meta property="og:description" content="A research practice grounded in embodiment — through body language, movement and virtual presence.">
+  <meta property="og:image" content="images/aura/aura-02.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400&text=路铭痴无明&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20261020d">
+</head>
+<body>
+
+  <!-- 开场 -->
+  <div class="intro" id="intro"><span class="intro__name">MING LU <em>路铭</em></span></div>
+
+  <!-- 导航 -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top">MING LU</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#philosophy">Philosophy</a>
+      <a href="#approach">Approach</a>
+      <a href="#works">Works</a>
+      <a href="#series">Series</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__menu" id="menuBtn" aria-label="Menu">Menu</button>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__media"><img id="heroImg" alt="" fetchpriority="high"></div>
+      <h1 class="hero__title" id="heroTitle"></h1>
+      <div class="hero__foot">
+        <div class="hero__text"><span class="hero__kicker" id="heroKicker"></span><p id="heroSub"></p></div>
+        <a href="#philosophy" class="hero__scroll">Scroll to discover <i></i></a>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="philo" id="philosophy">
+      <div class="philo__aside">
+        <span class="label">Philosophy</span>
+        <div class="philo__count"><span id="philoNum">00</span><small>/ 03</small></div>
+      </div>
+      <div class="philo__panels" id="philoPanels"></div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="approach" id="approach">
+      <div class="approach__head">
+        <span class="label">Approach</span>
+        <div class="approach__rotor">I <span class="rotor" id="rotor"></span></div>
+        <h2 class="approach__headline" id="approachHeadline"></h2>
+        <p class="approach__intro" id="approachIntro"></p>
+      </div>
+      <ol class="approach__steps" id="approachSteps"></ol>
+    </section>
+
+    <!-- WORKS -->
+    <section class="works" id="works">
+      <div class="section-head">
+        <span class="label">Works</span>
+        <h2 class="section-title">Selected <em>Works</em></h2>
+        <div class="works__filter" id="worksFilter"></div>
+      </div>
+      <div class="works__grid" id="worksGrid"></div>
+    </section>
+
+    <!-- SERIES -->
+    <section class="series" id="series">
+      <div class="section-head">
+        <span class="label">Series</span>
+        <h2 class="section-title">Three <em>Bodies</em> of Work</h2>
+      </div>
+      <ul class="series__list" id="seriesList"></ul>
+      <div class="series__float" id="seriesFloat"><img alt=""></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <span class="label">About</span>
+      <p class="about__intro" id="aboutIntro"></p>
+      <div class="about__statement" id="aboutStatement"></div>
+      <figure class="about__fig">
+        <img id="aboutImg" alt="Portrait of Ming Lu">
+        <figcaption><strong>Ming Lu <em>路铭</em></strong><span id="aboutCaption"></span></figcaption>
+      </figure>
+      <dl class="about__edu" id="aboutEdu"></dl>
+      <p class="about__bg" id="aboutBg"></p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <a class="contact__big" id="contactBig" href="#">Let’s Talk</a>
+      <div class="contact__cols">
+        <div><h3>Enquire</h3><a id="contactEmail" href="#"></a><small>Commissions, collaborations &amp; exhibitions</small></div>
+        <div><h3>Social</h3><a id="contactIg" href="#" target="_blank" rel="noopener"></a><small>Instagram</small></div>
+        <div><h3>Based in</h3><span>London, United Kingdom</span><small>Available worldwide</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#top">Back to top ↑</a>
+    <span>© <span id="year"></span> Ming Lu 路铭 — All rights reserved.</span>
+  </footer>
+
+  <!-- 作品详情页（点击作品后从右侧滑出） -->
+  <article class="project" id="project" aria-hidden="true">
+    <div class="project__bar">
+      <a href="#works" class="project__close" id="projectClose">← Back</a>
+      <span id="projectCrumb"></span>
+    </div>
+    <div class="project__inner" id="projectInner"></div>
+  </article>
+
+  <!-- 大图浏览 -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb__close" id="lbClose" aria-label="Close">Close</button>
+    <button class="lb__prev" id="lbPrev" aria-label="Previous">←</button>
+    <img id="lbImg" alt="">
+    <button class="lb__next" id="lbNext" aria-label="Next">→</button>
+    <span class="lb__count" id="lbCount"></span>
+  </div>
+
+  <script src="js/data.js?v=20261020d"></script>
+  <script src="js/main.js?v=20261020d"></script>
+</body>
+</html>
